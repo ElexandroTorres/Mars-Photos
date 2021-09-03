@@ -24,6 +24,8 @@ class OverviewFragment : Fragment() {
 
         binding.viewModel = viewModel
 
+        binding.photosGrid.adapter = PhotoGridAdapter()
+
         return binding.root
     }
 

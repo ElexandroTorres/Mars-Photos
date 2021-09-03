@@ -28,7 +28,19 @@
             app:spanCount="2"
             tools:itemCount="16"
             android:padding="6dp"
+            app:listData="@{viewModel.photos}"
+            android:clipToPadding="false"
             tools:listitem="@layout/grid_view_item" />
+
+        <ImageView
+            android:id="@+id/status_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            marsApiStatus="@{viewModel.status}"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
